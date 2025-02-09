@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecomet</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="Ecomet icon.ico" type="image/x-icon">
+    <style>
+        .logo-button, .user-icon-button {
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+        body {
+            font-size: 1.25rem;
+        }
+        .header h1 {
+            font-size: 1.25rem;
+        }
+        .section h2, .mission h2, .vision h2, .mountain h2 {
+            font-size: 1rem;
+        }
+        .info-content p, .mission p, .vision p, .mountain p {
+            font-size: 1rem;
+        }
+        .menu-content a {
+            font-size: 1rem;
+        }
+        .footer {
+            font-size: 1rem;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-align: center;
+        }
+        .highlight {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #ff6600;
+        }
+    </style>
+    <script>
+        function redirectToLogin() {
+            window.location.href = "inicio_sesión.html";
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <button class="logo-button" onclick="redirectToLogin()">
+            <div class="logo">
+                <img src="Ecomet icon.png" alt="Ecomet Logo">
+            </div>
+        </button>
+        <button class="user-icon-button" onclick="redirectToLogin()">
+            <div class="user-icon">
+                <img src="icono inicio.png" alt="inicio Logo">
+            </div>
+        </button>
+    </header>
+    
+    <section class="hero">
+        <h1>Excursiones al Ávila <br> para <span class="highlight">UNIMETANOS</span></h1>
+    </section>
+    
+    <section class="info">
+        <div>
+        <h1>¿Cansado de la rutina universitaria?</h1>
+        <span class="high"><p>Únete a las excursiones de Ecomet y descubre la belleza del Ávila.</p>
+            <p>¡Explora, aprende y disfruta con otros estudiantes!</p></span></div>        
+        <section class = "imge">
+            <img src="imagen.png">
+        </section>
+    </section>
+
+    <section class="explora">
+        <h2>¡Buscamos ser la plataforma líder en excursiones para estudiantes!</h2>
+    </section>
+
+    <section class="cta">
+        <h2>¿Qué esperas para iniciar tu primera aventura?</h2>
+        <button class="orange" onclick="redirectToLogin()">Ver rutas</button>
+        <button class="green" onclick="redirectToLogin()">¡Agenda ya!</button>
+    </section>
+
+    <section class="explora">
+        <h2>Explora tu Parque Nacional 📌 </h2>
+        <p class ="highlight">¿Sabías que el Ávila es más que una montaña? Es un tesoro natural y cultural.</p>
+        <div class="rutas">
+            <div class="ruta">
+                <button onclick="redirectToLogin()"><img src="quintero.png" alt="Quebrada Quintero"></button>
+                <h3>Quebrada Quintero</h3>
+            </div>
+            <div class="ruta">
+                <button onclick="redirectToLogin()"><img src="teleferico.png" alt="Antiguo Teleférico"></button>
+                <h3>Antiguo Teleférico</h3>
+            </div>
+            <div class="ruta">
+                <button onclick="redirectToLogin()"><img src="lagunazo.png" alt="Lagunazo"></button>
+                <h3>Lagunazo</h3>
+            </div>
+        </div>
+    </section>
+    <hr />
+    <footer>
+        <p>© Visita Caracas 2025 | Síguenos en: <a href="https://www.instagram.com/tu_usuario/" target="_blank" rel="noopener noreferrer">Instagram</a> | <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a></p>
+    </footer>
+</body>
+</html>

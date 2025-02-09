@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión - Ecomet</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #031D31;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .logocenter {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 250px; /* Ajustar el margen inferior según sea necesario */
+        }
+        .login-box {
+            background-color: #0B4069;
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .login-box h2 {
+            margin-bottom: 20px;
+        }
+        .login-box label {
+            display: block;
+            margin-bottom: 5px;
+            text-align: left; /* Alinear las etiquetas a la izquierda */
+            width: 100%; /* Asegurar que las etiquetas ocupen todo el ancho */
+        }
+        .login-box input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        .btn {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s; /* Añadir transición para el efecto de hover */
+        }
+        .btn.orange {
+            background-color: #FF6709;
+            color: white;
+        }
+        .btn.orange:hover {
+            background-color: #CC5507; /* Color más oscuro al pasar el cursor */
+        }
+        .btn.google, .btn.facebook {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .btn.google img, .btn.facebook img {
+            margin-right: 10px;
+            width: 20px; /* Ajustar el tamaño del logo */
+            height: auto;
+        }
+        .btn.google:hover {
+            background-color: #D4D4D4; /* Color más oscuro al pasar el cursor */
+        }
+        .btn.facebook:hover {
+            background-color: #3B5998; /* Color más oscuro al pasar el cursor */
+        }
+        .btn.register {
+            background-color: #555;
+            color: white;
+        }
+        .btn.register:hover {
+            background-color: #333; /* Color más oscuro al pasar el cursor */
+        }
+        .user-icon img {
+            width: 200px; /* Tamaño más pequeño */
+            height: auto;
+            position: absolute;
+            top: 5px;
+            left: 1200px;
+        }
+        .logo-button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            width: 95px; /* Ajustar el tamaño del logo */
+            height: auto;
+        }
+    </style>
+    <script>
+        function redirectToLogin() {
+            window.location.href = "portada.html"; // Cambia 'portada.html' por la URL de tu página de inicio de sesión
+        }
+        function redirectToRegister() {
+            window.location.href = "registro.html"; // Cambia 'registro.html' por la URL de tu página de registro
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <button class="logo-button">
+            <div class="logocenter" onclick="redirectToLogin()">
+                <img src="Ecomet icon.png" alt="Ecomet Logo">
+            </div>
+        </button>
+        <div class="login-box">
+            <h2>Inicio de sesión</h2>
+            <p>Inicia sesión en tu cuenta de <strong>Ecomet</strong>.</p>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="tucorreo@correo.unimet.edu.ve">
+
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" placeholder="Ingresa tu contraseña">
+
+            <button class="btn orange">Iniciar Sesión</button>
+
+            <button class="btn google">
+                <img src="google-icon.png" alt="Google Icon">
+                Continuar con Google
+            </button>
+
+            <button class="btn facebook">
+                <img src="facebook-icon.png" alt="Facebook Icon">
+                Continuar con Facebook
+            </button>
+            <button class="btn register" onclick="redirectToRegister()">Registrate</button>
+        </div>
+    </div>
+</body>
+</html>
