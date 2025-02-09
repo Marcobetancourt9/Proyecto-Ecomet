@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Ecomet</title>
+    <link rel="stylesheet" href="consultas.css">
+</head>
+<body>
+    <header>
+        <img src="imagenes/Ecomet icon.png" alt="Ecomet Logo" class="logo">
+        <img src="imagenes/menu-icon.png" alt="Menú" class="menu" id="menuIcon">
+    </header>  
+    <section class="contacto">
+        <h1>CONTÁCTANOS</h1>
+    </section>
+    <div class="info">
+        <h2>Información</h2>
+        <p><strong>Email:</strong> <a href="mailto:ecomet@correo.unimat.edu.ve">ecomet@correo.unimat.edu.ve</a></p>
+        <p>📌 En Ecomet estamos interesados en conocer tu opinión. Envíanos tus sugerencias sobre el sitio, nuestras salidas o cualquiera de nuestros servicios.</p>
+    </div>
+    <form>
+        <label for="topicos">Tópicos</label>
+        <select id="topicos">
+            <option>Selecciona un Tópico</option>
+        </select>
+        
+        <label for="nombre">Nombres y Apellidos</label>
+        <input type="text" id="nombre" placeholder="Nombres y Apellidos">
+        
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="tucorreo@ejemplo.com">
+        
+        <label for="telefono">Teléfono</label>
+        <input type="tel" id="telefono" placeholder="Número de teléfono">
+        
+        <label for="resena">Reseña</label>
+        <textarea id="resena" placeholder="Escribe tu mensaje..."></textarea>
+        
+        <button type="submit">ENVIAR MENSAJE</button>
+    </form>
+    <div class="terms">
+        <input type="checkbox" id="terms"> Al continuar confirmo que he leído y acepto los <a href="#">Términos y condiciones</a> y la <a href="#">Política de privacidad</a>.
+    </div>
+    <div class="footer">
+        <p>© Ecomet 2025 | Síguenos en: <a href="https://www.instagram.com/tu_usuario/" target="_blank" rel="noopener noreferrer">Instagram</a> | <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a></p>
+    </div>
+    <div class="menu-container" id="menuContainer">
+        <div class="menu-content">
+            <span class="close-menu" id="closeMenu">&times;</span>
+            <a href="inicio.html"> 🌲 Inicio</a>
+            <a href="#"> 🗓️ Reservar</a>
+            <a href="#"> 🖼️ Rutas</a>
+            <a href="consejos.html"> 🦺 Consejos de Seguridad</a>
+            <a href="Editar_perfil.html"> 🪪 Editar Perfil</a>
+            <a href="consultas.html"> 📫 Contactarnos</a>
+            <a href="portada.html"> ❌ Cerrar Sesión</a>
+        </div>
+    </div>
+    <script src="menu.js"></script>
+</body>
+</html
