@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #031D31;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+.logo {
+    margin-bottom: 50px;
+}
+.logo img {
+    width: 180px;
+}
+.container {
+    background-color: #0B4069;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    width: 400px;
+    color: white;
+    text-align: center;
+}
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+    width: calc(100% + 10px); /* Ajustar el ancho para compensar el margen negativo */
+    margin-left: -10px; /* Ajustar el margen hacia la izquierda */
+}
+.input-group label {
+    display: block;
+    font-weight: bold;
+    font-size: 1.2rem; /* Aumentar tamaño del texto */
+}
+.input-group input {
+    width: 100%;
+    padding: 12px; /* Aumentar tamaño del padding */
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem; /* Aumentar tamaño del texto */
+}
+.profile-pic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.profile-pic img {
+    width: 100px; /* Tamaño del icono */
+    border-radius: 50%; /* Sin marco */
+}
+.edit-text {
+    font-size: 1rem; /* Aumentar tamaño del texto */
+    color: lightgray;
+}
+.submit-btn {
+    width: calc(100% + 10px); /* Ajustar el ancho para compensar el margen negativo */
+    margin-left: 0px; /* Ajustar el margen hacia la izquierda */
+    background-color: #FF6709;
+    padding: 14px; /* Aumentar tamaño del padding */
+    border: none;
+    border-radius: 5px;
+    font-size: 1.3rem; /* Aumentar tamaño del texto */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.submit-btn:hover {
+    background-color: #CC5407;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinear contenido del formulario a la izquierda */
+    width: 100%;
+}
