@@ -13,6 +13,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column; /* Cambiar a columna */
             height: 100vh;
             margin: 0;
         }
@@ -25,7 +26,7 @@
         .logocenter {
             display: flex;
             justify-content: center;
-            margin-bottom: 250px; /* Ajustar el margen inferior según sea necesario */
+            margin-bottom: 20px; /* Ajustar el margen inferior según sea necesario */
         }
         .login-box {
             background-color: #0B4069;
@@ -91,37 +92,27 @@
         .btn.register:hover {
             background-color: #333; /* Color más oscuro al pasar el cursor */
         }
-        .user-icon img {
-            width: 200px; /* Tamaño más pequeño */
+        .logo img {
+            width: 300px; /* Tamaño más pequeño */
             height: auto;
-            position: absolute;
-            top: 5px;
-            left: 1200px;
         }
         .logo-button {
             background: none;
             border: none;
             cursor: pointer;
-            width: 95px; /* Ajustar el tamaño del logo */
+            width: 300px; /* Ajustar el tamaño del logo */
             height: auto;
+            margin-bottom: 20px; /* Espacio debajo del logo */
         }
     </style>
-    <script>
-        function redirectToLogin() {
-            window.location.href = "portada.html"; // Cambia 'portada.html' por la URL de tu página de inicio de sesión
-        }
-        function redirectToRegister() {
-            window.location.href = "registro.html"; // Cambia 'registro.html' por la URL de tu página de registro
-        }
-    </script>
 </head>
 <body>
+    <button class="logo-button" onclick="redirectToLogin()">
+        <div class="logo">
+            <img src="imagenes/Ecomet icon.png" alt="Ecomet Logo">
+        </div>
+    </button>
     <div class="container">
-        <button class="logo-button">
-            <div class="logocenter" onclick="redirectToLogin()">
-                <img src="Ecomet icon.png" alt="Ecomet Logo">
-            </div>
-        </button>
         <div class="login-box">
             <h2>Inicio de sesión</h2>
             <p>Inicia sesión en tu cuenta de <strong>Ecomet</strong>.</p>
@@ -135,16 +126,24 @@
             <button class="btn orange">Iniciar Sesión</button>
 
             <button class="btn google">
-                <img src="google-icon.png" alt="Google Icon">
+                <img src="imagenes/google-icon.png" alt="Google Icon">
                 Continuar con Google
             </button>
 
             <button class="btn facebook">
-                <img src="facebook-icon.png" alt="Facebook Icon">
+                <img src="imagenes/facebook-icon.png" alt="Facebook Icon">
                 Continuar con Facebook
             </button>
             <button class="btn register" onclick="redirectToRegister()">Registrate</button>
         </div>
     </div>
+    <script>
+        function redirectToLogin() {
+            window.location.href = "portada.html"; // Cambia 'portada.html' por la URL de tu página de inicio de sesión
+        }
+        function redirectToRegister() {
+            window.location.href = "registro.html"; // Cambia 'registro.html' por la URL de tu página de registro
+        }
+    </script>
 </body>
 </html>

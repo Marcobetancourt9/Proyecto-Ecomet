@@ -35,7 +35,7 @@ header {
 
 
 .cta {
-    background-image: url('fondo2.png'); /* Imagen de fondo */
+    background-image: url('imagenes/fondo2.png'); /* Imagen de fondo */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;;
@@ -115,7 +115,7 @@ footer {
 }
 
 .hero {
-    background-image: url('fondo.png'); /* Imagen de fondo */
+    background-image: url('imagenes/fondo.png'); /* Imagen de fondo */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
