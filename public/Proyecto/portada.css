@@ -77,11 +77,19 @@ button {
     justify-content: center;
     gap: 20px;
 }
-
 .ruta img {
     width: 200px;
     height: 250px;
-    border-radius: 10px;
+    border-radius: 0; /* Elimina el redondeo si no quieres esquinas curvas */
+    padding: 0;
+    margin: 0;
+    background: none;
+    box-shadow: none; /* Asegura que no haya sombras blancas */
+}
+.ruta button {
+    background: none;
+    border: none;
+    padding: 0;
 }
 
 footer {
